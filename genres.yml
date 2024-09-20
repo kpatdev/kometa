@@ -22,6 +22,6 @@ templates:
 collections:
   Thriller:
     template: {name: Genre, genre: thriller}
-    sort_prefix: "!010"
+    sort_title: "!010_Thriller"
     summary: "A collection of Thriller movies."
     url_poster: https://theposterdb.com/api/assets/69226
