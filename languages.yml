@@ -13,8 +13,8 @@ templates:
       all:
         label: <<smart_label>>
         unplayed: true
-    collection_section: "011"
-    sort_prefix: "!"
+    # collection_section: "011"
+    sort_prefix: "!011"
     sync_mode: sync
     visible_library: true
     visible_home: true
