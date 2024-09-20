@@ -14,7 +14,7 @@ templates:
         label: <<smart_label>>
         unplayed: true
     collection_section: "011"
-    sort_prefix: ""
+    sort_prefix: "!"
     sync_mode: sync
     visible_library: true
     visible_home: true
