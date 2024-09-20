@@ -14,7 +14,7 @@ templates:
         label: <<smart_label>>
         unplayed: true
     # collection_section: "011"
-    sort_prefix: "!011"
+    # sort_prefix: "!011"
     sync_mode: sync
     visible_library: true
     visible_home: true
@@ -23,5 +23,6 @@ templates:
 collections:
   Bollywood Movies:
     template: {name: Language, language: hi, not_language: en}
+    sort_prefix: "!011"
     summary: "A collection of Bollywood movies."
     url_poster: https://i.imgur.com/s52KOu1.jpg

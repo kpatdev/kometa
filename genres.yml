@@ -13,7 +13,7 @@ templates:
         label: <<smart_label>>
         unplayed: true
     # collection_section: "010"
-    sort_prefix: "!010"
+    # sort_prefix: "!010"
     sync_mode: sync
     visible_library: true
     visible_home: true
@@ -22,5 +22,6 @@ templates:
 collections:
   Thriller:
     template: {name: Genre, genre: thriller}
+    sort_prefix: "!010"
     summary: "A collection of Thriller movies."
     url_poster: https://theposterdb.com/api/assets/69226
