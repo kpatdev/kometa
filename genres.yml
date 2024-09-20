@@ -18,9 +18,9 @@ templates:
     visible_library: true
     visible_home: true
     visible_shared: true
-    test: true
 
 collections:
   Thriller:
     template: {name: Genre, genre: thriller}
+    summary: "A collection of Thriller movies."
     url_poster: https://theposterdb.com/api/assets/69226
