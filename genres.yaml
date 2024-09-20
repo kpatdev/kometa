@@ -1,0 +1,25 @@
+#######################################################
+#                 Genre Collections                   #
+#######################################################
+
+templates:
+  Genre:
+    plex_search:
+      all:
+        genre: <<genre>>
+    smart_label:
+      sort_by: release.desc
+      all:
+        label: <<smart_label>>
+        unplayed: true
+    collection_section: "010"
+    sort_prefix: ""
+    sync_mode: sync
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+collections:
+  Thriller:
+    template: {name: Genre, genre: thriller}
+    url_poster: https://theposterdb.com/api/assets/69226

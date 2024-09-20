@@ -1,0 +1,26 @@
+#######################################################
+#               Language Collections                  #
+#######################################################
+
+templates:
+  Language:
+    plex_search:
+      all:
+        audio_language: <<language>>
+        audio_language.not: <<not_language>>
+    smart_label:
+      sort_by: release.desc
+      all:
+        label: <<smart_label>>
+        unplayed: true
+    collection_section: "011"
+    sort_prefix: ""
+    sync_mode: sync
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+collections:
+  Bollywood Movies:
+    template: {name: Language, language: hi, not_language: en}
+    url_poster: https://i.imgur.com/s52KOu1.jpg
