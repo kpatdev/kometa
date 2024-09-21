@@ -12,15 +12,13 @@ templates:
       all:
         label: <<smart_label>>
         unplayed: true
-    # collection_section: "010"
-    # sort_prefix: "!010"
     sync_mode: sync
     visible_library: true
     visible_home: true
     visible_shared: true
 
 collections:
-  Thriller:
+  Thriller Movies:
     template: {name: Genre, genre: thriller}
     sort_title: "!010_Thriller"
     summary: "A collection of Thriller movies."
