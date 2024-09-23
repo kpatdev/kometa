@@ -1,0 +1,12 @@
+#######################################################
+#               Box Office Collections                #
+#######################################################
+
+collections:
+  Box Office Top 10:
+    mojo_world:
+      year: current
+  Top 100 All Time Grosses:
+    mojo_all_time:
+      chart: worldwide
+      limit: 100

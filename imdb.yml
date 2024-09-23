@@ -1,0 +1,18 @@
+#######################################################
+#                  IMDb Collections                   #
+#######################################################
+
+templates:
+  IMDb:
+    imdb_chart: <<chart>>
+    collection_order: custom
+    sync_mode: sync
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+collections:
+  IMDb Trending India:
+    template: {name: IMDb, chart: trending_india}
+  IMDb Top Rated Indian Movies:
+    template: {name: IMDb, chart: top_indian}

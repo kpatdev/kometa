@@ -1,0 +1,20 @@
+#######################################################
+#                MDBList Collections                  #
+#######################################################
+
+templates:
+  MDBList:
+    sync_mode: sync
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+collections:
+  Movies People Love:
+    template: {name: MDBList}
+    mdblist_list:
+      url: https://mdblist.com/lists/galacticboy/people-love-it
+      sort_by: released.desc
+    sort_title: "!017_Movies People Love"
+    summary: "A collection of movies and TV shows that people love."
+    url_poster: 

@@ -1,0 +1,22 @@
+#######################################################
+#                 Added Collections                   #
+#######################################################
+
+external_templates:
+  default: templates
+  template_variables:
+    collection_section: "040"
+    image: chart/<<poster>>
+
+collections:  
+  Just Added:
+    variables:
+      poster: "Newly%20Released"
+    sort_title: "!040_Just Added"
+    smart_filter:
+      sort_by: added.desc
+      all:
+        added: 365
+    visible_library: true
+    visible_home: true
+    visible_shared: true
