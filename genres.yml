@@ -18,8 +18,8 @@ templates:
     visible_shared: true
 
 collections:
-  Thriller Movies:
+  Thriller:
     template: {name: Genre, genre: thriller}
-    sort_title: "!010_Thriller"
+    sort_title: "!030_Thriller"
     summary: "A collection of Thriller movies."
     url_poster: https://theposterdb.com/api/assets/69226

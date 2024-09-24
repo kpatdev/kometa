@@ -19,8 +19,8 @@ templates:
     visible_shared: true
 
 collections:
-  Bollywood Movies:
+  Bollywood:
     template: {name: Language, language: hi}
-    sort_title: "!010_Bollywood Movies"
+    sort_title: "!020_Bollywood Movies"
     summary: "A collection of Bollywood movies."
     url_poster: https://i.imgur.com/s52KOu1.jpg
