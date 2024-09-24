@@ -2,25 +2,46 @@
 #               Language Collections                  #
 #######################################################
 
-templates:
-  Language:
-    plex_search:
-      all:
-        audio_language: <<language>>
-        # audio_language.not: <<not_language>>
-    smart_label:
-      sort_by: release.desc
-      all:
-        label: <<smart_label>>
-        unplayed: true
+external_templates:
+  default: templates
+  template_variables:
+    collection_section: "040"
+    # image: chart/<<poster>>
     sync_mode: sync
-    visible_library: true
-    visible_home: true
-    visible_shared: true
 
 collections:
   Bollywood:
-    template: {name: Language, language: hi}
-    sort_title: "!020_Bollywood Movies"
+    variables:
+      key: bollywood
+    template:
+      - name: smart_filter
+        search_term: audio_language
+        search_value: <<audio_language>>
+        audio_language: hi
+        sort_by: release.desc
+      - name: shared
     summary: "A collection of Bollywood movies."
     url_poster: https://i.imgur.com/s52KOu1.jpg
+
+# templates:
+#   Language:
+#     plex_search:
+#       all:
+#         audio_language: <<language>>
+#         # audio_language.not: <<not_language>>
+#     smart_label:
+#       sort_by: release.desc
+#       all:
+#         label: <<smart_label>>
+#         unplayed: true
+#     sync_mode: sync
+#     visible_library: true
+#     visible_home: true
+#     visible_shared: true
+
+# collections:
+#   Bollywood:
+#     template: {name: Language, language: hi}
+#     sort_title: "!020_Bollywood Movies"
+#     summary: "A collection of Bollywood movies."
+#     url_poster: https://i.imgur.com/s52KOu1.jpg
