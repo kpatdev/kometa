@@ -5,17 +5,49 @@
 external_templates:
   default: templates
   template_variables:
-    collection_section: "040"
-    image: chart/<<poster>>
+    collection_section: "010"
+    # image: chart/<<poster>>
 
-collections:  
-  Just Added:
-    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/refs/heads/master/chart/Newly%20Released.jpg
-    sort_title: "!040_Just Added"
-    smart_filter:
-      sort_by: added.desc
-      all:
-        added: 365
-    visible_library: true
-    visible_home: true
-    visible_shared: true
+collections:
+  Recently Added:
+    variables:
+      key: added
+      # poster: "Newly%20Released.jpg"
+    template:
+      - name: smart_filter
+        search_term: added
+        search_value: <<in_the_last_added>>
+        in_the_last_added: 365
+      - name: shared
+  Recently Released:
+    variables:
+      key: released
+      # poster: "Newly%20Released.jpg"
+    template:
+      - name: smart_filter
+        search_term: added
+        search_value: <<in_the_last_released>>
+        in_the_last_released: 365
+      - name: shared
+  Recent Episodes:
+    variables:
+      key: episodes
+      # poster: "Newly%20Released.jpg"
+    template:
+      - name: smart_filter
+        search_term: added
+        search_value: <<in_the_last_episodes>>
+        in_the_last_episodes: 30
+        type: episode
+      - name: shared
+
+  # Recently Added:
+  #   # url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/refs/heads/master/chart/Newly%20Released.jpg
+  #   sort_title: "!040_Just Added"
+  #   smart_filter:
+  #     sort_by: added.desc
+  #     all:
+  #       added: 365
+  #   visible_library: true
+  #   visible_home: true
+  #   visible_shared: true
