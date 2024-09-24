@@ -6,7 +6,6 @@ external_templates:
   default: templates
   template_variables:
     collection_section: "030"
-    # image: chart/<<poster>>
     sync_mode: sync
 
 collections:
@@ -14,7 +13,6 @@ collections:
     variables:
       key: thriller
       genre: thriller
-      # poster: "Thriller.jpg"
     template:
       - name: smart_filter
         search_term: genre

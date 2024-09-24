@@ -6,7 +6,6 @@ external_templates:
   default: templates
   template_variables:
     collection_section: "040"
-    # image: chart/<<poster>>
     sync_mode: sync
 
 collections:
