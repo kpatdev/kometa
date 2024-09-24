@@ -17,7 +17,7 @@ collections:
       - name: smart_filter
         search_term: added
         search_value: <<in_the_last_added>>
-        in_the_last_added: 365
+        in_the_last_added: 90
       - name: shared
   Recently Released:
     variables:
@@ -40,7 +40,7 @@ collections:
         in_the_last_episodes: 90
         type: episodes
       - name: shared
-    # builder_level: episodes
+    builder_level: episodes
 
   # Recently Added:
   #   # url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/refs/heads/master/chart/Newly%20Released.jpg
