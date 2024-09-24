@@ -40,7 +40,7 @@ collections:
         in_the_last_episodes: 90
         type: episodes
       - name: shared
-    builder_level: episodes
+    builder_level: episode
 
   # Recently Added:
   #   # url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/refs/heads/master/chart/Newly%20Released.jpg
