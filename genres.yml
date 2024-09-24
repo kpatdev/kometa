@@ -2,24 +2,46 @@
 #                 Genre Collections                   #
 #######################################################
 
-templates:
-  Genre:
-    plex_search:
-      all:
-        genre: <<genre>>
-    smart_label:
-      sort_by: release.desc
-      all:
-        label: <<smart_label>>
-        unplayed: true
+external_templates:
+  default: templates
+  template_variables:
+    collection_section: "030"
+    # image: chart/<<poster>>
     sync_mode: sync
-    visible_library: true
-    visible_home: true
-    visible_shared: true
 
 collections:
   Thriller:
-    template: {name: Genre, genre: thriller}
-    sort_title: "!030_Thriller"
-    summary: "A collection of Thriller movies."
+    variables:
+      key: thriller
+      genre: thriller
+      # poster: "Thriller.jpg"
+    template:
+      - name: smart_filter
+        search_term: genre
+        search_value: <<genre>>
+        sort_by: release.desc
+        limit: 100
+    summary: "A collection of the latest Thriller movies."
     url_poster: https://theposterdb.com/api/assets/69226
+
+# templates:
+#   Genre:
+#     plex_search:
+#       all:
+#         genre: <<genre>>
+#     smart_label:
+#       sort_by: release.desc
+#       all:
+#         label: <<smart_label>>
+#         unplayed: true
+#     sync_mode: sync
+#     visible_library: true
+#     visible_home: true
+#     visible_shared: true
+
+# collections:
+#   Thriller:
+#     template: {name: Genre, genre: thriller}
+#     sort_title: "!030_Thriller"
+#     summary: "A collection of Thriller movies."
+#     url_poster: https://theposterdb.com/api/assets/69226
