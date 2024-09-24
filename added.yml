@@ -37,10 +37,10 @@ collections:
       # poster: "Newly%20Released.jpg"
     template:
       - name: smart_filter
-        search_term: added
+        search_term: episode_air_date
         search_value: <<in_the_last_episodes>>
-        in_the_last_episodes: 30
-        sort_by: added.desc
+        in_the_last_episodes: 90
+        sort_by: release.desc
         type: episodes
       - name: shared
 
