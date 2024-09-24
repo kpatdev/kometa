@@ -10,8 +10,7 @@ external_templates:
 
 collections:  
   Just Added:
-    variables:
-      poster: "Newly Released"
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/refs/heads/master/chart/Newly%20Released.jpg
     sort_title: "!040_Just Added"
     smart_filter:
       sort_by: added.desc
