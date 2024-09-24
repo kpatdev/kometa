@@ -18,7 +18,6 @@ collections:
         search_term: added
         search_value: <<in_the_last_added>>
         in_the_last_added: 365
-        sort_by: added.desc
       - name: shared
   Recently Released:
     variables:
@@ -29,7 +28,6 @@ collections:
         search_term: release
         search_value: <<in_the_last_released>>
         in_the_last_released: 365
-        sort_by: release.desc
       - name: shared
   Recently Aired:
     variables:
@@ -40,7 +38,6 @@ collections:
         search_term: episode_air_date
         search_value: <<in_the_last_episodes>>
         in_the_last_episodes: 90
-        sort_by: episode_release.desc
         type: episodes
       - name: shared
     # builder_level: episodes
