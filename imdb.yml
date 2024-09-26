@@ -2,17 +2,28 @@
 #                  IMDb Collections                   #
 #######################################################
 
+external_templates:
+  default: templates
+  template_variables:
+    collection_section: "046"
+    sync_mode: sync
+
 templates:
   IMDb:
     imdb_chart: <<chart>>
-    collection_order: custom
-    sync_mode: sync
-    visible_library: true
-    visible_home: true
-    visible_shared: true
 
 collections:
   IMDb Trending India:
-    template: {name: IMDb, chart: trending_india}
-  IMDb Top Rated Indian Movies:
-    template: {name: IMDb, chart: top_indian}
+    variables:
+      key: trending_india
+    template:
+      - name: IMDb
+        chart: trending_india
+      - name: shared
+  IMDb Top Indian:
+    variables:
+      key: top_indian
+    template:
+      - name: IMDb
+        chart: top_indian
+      - name: shared
