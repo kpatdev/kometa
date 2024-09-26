@@ -1,5 +1,5 @@
 #######################################################
-#               Language Collections                  #
+#            Language/Country Collections             #
 #######################################################
 
 external_templates:
@@ -14,9 +14,13 @@ collections:
       key: bollywood
     template:
       - name: smart_filter
-        search_term: audio_language
-        search_value: <<audio_language>>
-        audio_language: hi
+        any:
+          search_term: audio_language
+          search_value: <<audio_language>>
+          search_term2: country
+          search_value2: <<country>>
+          country: India
+          audio_language: hi
         sort_by: release.desc
       - name: shared
     summary: "A collection of Bollywood movies."
