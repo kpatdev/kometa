@@ -7,6 +7,7 @@ external_templates:
   template_variables:
     collection_section: "046"
     sync_mode: sync
+    collection_order: custom
 
 templates:
   IMDb:

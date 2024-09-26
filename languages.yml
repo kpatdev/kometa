@@ -14,14 +14,16 @@ collections:
       key: bollywood
     template:
       - name: smart_filter
-        any:
-          search_term: audio_language
-          search_value: <<audio_language>>
-          search_term2: country
-          search_value2: <<country>>
-          country: India
-          audio_language: hi
         sort_by: release.desc
+        search_term: audio_language
+        search_value: <<audio_language>>
+        search_term2: country
+        search_value2: <<country>>
+        country: India
+        audio_language: hi
+        # any:
+        #   <<search_term>>: <<search_value>>
+        #   <<search_term2>>: <<search_value2>>
       - name: shared
     summary: "A collection of Bollywood movies."
     url_poster: https://i.imgur.com/s52KOu1.jpg
