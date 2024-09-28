@@ -21,6 +21,7 @@ collections:
       - name: IMDb
         chart: trending_india
       - name: shared
+      - name: arr
   IMDb Top Indian:
     variables:
       key: top_indian
@@ -28,3 +29,4 @@ collections:
       - name: IMDb
         chart: top_indian
       - name: shared
+      - name: arr
