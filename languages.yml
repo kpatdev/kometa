@@ -21,9 +21,6 @@ collections:
         search_value2: <<country>>
         country: India
         audio_language: hi
-        # any:
-        #   <<search_term>>: <<search_value>>
-        #   <<search_term2>>: <<search_value2>>
       - name: shared
     summary: "A collection of Bollywood movies."
     url_poster: https://i.imgur.com/s52KOu1.jpg
