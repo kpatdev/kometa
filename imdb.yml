@@ -30,3 +30,4 @@ collections:
         chart: top_indian
       - name: shared
       - name: arr
+    url_poster: https://raw.githubusercontent.com/dezerving/kometa/refs/heads/master/posters/IMDB%20Top%20Indian.jpg

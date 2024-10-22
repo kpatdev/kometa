@@ -19,6 +19,7 @@ collections:
         search_value: <<in_the_last_added>>
         in_the_last_added: 90
       - name: shared
+    url_poster: https://raw.githubusercontent.com/dezerving/kometa/refs/heads/master/posters/Recently%20Added.jpg
   Recently Aired:
     variables:
       key: episodes
@@ -41,6 +42,7 @@ collections:
         search_value: <<in_the_last_released>>
         in_the_last_released: 365
       - name: shared
+    url_poster: https://raw.githubusercontent.com/dezerving/kometa/refs/heads/master/posters/Recently%20Released.jpg
 
   # Recently Added:
   #   # url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/refs/heads/master/chart/Newly%20Released.jpg
