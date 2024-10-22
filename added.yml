@@ -32,6 +32,7 @@ collections:
         type: episodes
       - name: shared
     builder_level: episode
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/refs/heads/master/chart/Recently%20Aired.jpg
   Recently Released:
     variables:
       key: released
