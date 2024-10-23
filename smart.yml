@@ -1,0 +1,23 @@
+#######################################################
+#                 Smart Collections                   #
+#######################################################
+
+external_templates:
+  default: templates
+  template_variables:
+    collection_section: "009"
+    # image: chart/<<poster>>
+
+collections:
+  In Progress:
+    variables:
+      key: progress_shows
+    smart_filter:
+      sort_by: viewed.desc
+      all:
+        unplayed_episodes: true
+        episode_plays.gt: 0
+    template:
+      - name: shared
+    collection_filtering: user
+    url_poster: https://raw.githubusercontent.com/dezerving/kometa/refs/heads/master/posters/In%20Progress.jpg
