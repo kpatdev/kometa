@@ -2,12 +2,72 @@
 #                     Playlists                       #
 #######################################################
 
+external_templates:
+  default: templates
+
+templates:
+  playlist:
+    conditionals:
+      trakt_list:
+        conditions:
+          - key: arrow
+            value: https://trakt.tv/users/donxy/lists/arrowverse
+          - key: mcu
+            value: https://trakt.tv/users/donxy/lists/marvel-cinematic-universe
+          - key: dcau
+            value: https://trakt.tv/users/donxy/lists/dc-animated-series-universe
+          - key: pokemon
+            value: https://trakt.tv/users/munch54/lists/pokemon-watching-order
+          - key: startrek
+            value: https://trakt.tv/users/goodevilgenius/lists/star-trek-chronology
+          - key: starwars
+            value: https://trakt.tv/users/xrayblaster/lists/star-wars-chronological-order
+          - key: clonewars
+            value: https://trakt.tv/users/tomfin46/lists/star-wars-the-clone-wars-chronological-episode-order
+          - key: xmen
+            value: https://trakt.tv/users/alan-pittflix/lists/x-men
+          - key: dragonball
+            value: https://trakt.tv/users/grawler/lists/dragon-ball-in-order
+    default:
+      libraries: Movies, TV Shows
+      item_radarr_tag_<<key>>: <<item_radarr_tag>>
+      item_sonarr_tag_<<key>>: <<item_sonarr_tag>>
+      trakt_list_<<key>>: <<trakt_list>>
+      url_poster_<<key>>: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/playlist/<<mapping_name_encoded>>.jpg
+      name_<<key>>: <<mapping_name>>
+      sync_to_users_<<key>>: <<sync_to_users>>
+      exclude_users_<<key>>: <<exclude_users>>
+      delete_playlist_<<key>>: <<delete_playlist>>
+    optional:
+      - use_<<key>>
+      - item_radarr_tag
+      - item_sonarr_tag
+      - ignore_ids
+      - ignore_imdb_ids
+      - sync_to_users
+      - exclude_users
+      - delete_playlist
+    run_definition:
+      - <<use_<<key>>>>
+    ignore_ids: <<ignore_ids>>
+    ignore_imdb_ids: <<ignore_imdb_ids>>
+    item_radarr_tag: <<item_radarr_tag_<<key>>>>
+    item_sonarr_tag: <<item_sonarr_tag_<<key>>>>
+    trakt_list: <<trakt_list_<<key>>>>
+    cache_builders: 1
+    sync_to_users: <<sync_to_users_<<key>>>>
+    exclude_users: <<exclude_users_<<key>>>>
+    delete_playlist: <<delete_playlist_<<key>>>>
+    sync_mode: sync
+    libraries: <<libraries>>
+    url_poster: <<url_poster_<<key>>>>
+    summary: <<summary_<<key>>>>
+    name: <<name_<<key>>>>
+
 playlists:
   Light Shows:
-    sync_mode: sync
-    libraries: TV Shows
-    sync_to_users: kishanp
-    summary: light shows
+    variables:
+      key: light
     plex_search:
       sort_by: random
       any:
@@ -19,4 +79,10 @@ playlists:
           - "The League"
           - "It's Always Sunny in Philadelphia"
           - "The Office (US)"
-    url_poster: https://raw.githubusercontent.com/dezerving/kometa/refs/heads/master/posters/Light%20Shows.jpg
+    template:
+      - name: playlist
+        libraries: TV Shows
+        sync_to_users: kishanp
+        summary: Light shows.
+        url_poster: https://raw.githubusercontent.com/dezerving/kometa/refs/heads/master/posters/Light%20Shows.jpg
+      - name: arr
