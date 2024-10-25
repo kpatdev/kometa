@@ -7,7 +7,6 @@ external_templates:
 
 templates:
   playlist:
-    conditionals:
     default:
       libraries: Movies, TV Shows
       item_radarr_tag_<<key>>: <<item_radarr_tag>>
