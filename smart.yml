@@ -27,13 +27,14 @@ collections:
     smart_filter:
       sort_by: random
       any:
-        title: "Entourage"
-        title: "The Big Bang Theory"
-        title: "Silicon Valley"
-        title: "Brooklyn Nine-Nine"
-        title: "The League"
-        title: "It's Always Sunny in Philadelphia"
-        title: "The Office (US)"
+        title: 
+          - "Entourage"
+          - "The Big Bang Theory"
+          - "Silicon Valley"
+          - "Brooklyn Nine-Nine"
+          - "The League"
+          - "It's Always Sunny in Philadelphia"
+          - "The Office (US)"
     template:
       - name: shared
     url_poster: https://raw.githubusercontent.com/dezerving/kometa/refs/heads/master/posters/Light%20Shows.jpg
