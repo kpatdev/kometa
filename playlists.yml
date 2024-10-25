@@ -25,3 +25,4 @@ playlists:
         title: "The Office (US)"
     template:
       - name: shared
+    url_poster: https://raw.githubusercontent.com/dezerving/kometa/refs/heads/master/posters/Light%20Shows.jpg
