@@ -1,0 +1,27 @@
+#######################################################
+#                     Playlists                       #
+#######################################################
+
+external_templates:
+  default: templates
+
+playlists:
+  Light Shows:
+    sync_mode: sync
+    libraries: TV Shows
+    sync_to_users: kishanp
+    summary: light shows
+    variables:
+      key: light
+    smart_filter:
+      sort_by: random
+      any:
+        title: "Entourage"
+        title: "The Big Bang Theory"
+        title: "Silicon Valley"
+        title: "Brooklyn Nine-Nine"
+        title: "The League"
+        title: "It's Always Sunny in Philadelphia"
+        title: "The Office (US)"
+    template:
+      - name: shared
