@@ -13,7 +13,7 @@ playlists:
     summary: light shows
     variables:
       key: light
-    smart_filter:
+    plex_search:
       sort_by: random
       any:
         title: "Entourage"

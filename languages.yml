@@ -22,7 +22,7 @@ collections:
         country: India
         audio_language: hi
       - name: shared
-    summary: "A collection of Bollywood movies."
+    summary: "Bollywood shows and movies."
     url_poster: https://i.imgur.com/s52KOu1.jpg
 
 # templates:
