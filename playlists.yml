@@ -8,7 +8,7 @@ playlists:
     sync_to_users: kishanp
     summary: Light shows to watch whenever.
     url_poster: https://raw.githubusercontent.com/dezerving/kometa/refs/heads/master/posters/Light%20Shows.jpg
-    plex_search:
+    smart_filter:
       sort_by: random
       any:
         title: 
