@@ -8,7 +8,7 @@ playlists:
     libraries: TV Shows
     sync_to_users: kishanp
     summary: light shows
-    smart_filter:
+    plex_search:
       sort_by: random
       any:
         title: 
