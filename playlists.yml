@@ -2,17 +2,12 @@
 #                     Playlists                       #
 #######################################################
 
-external_templates:
-  default: templates
-
 playlists:
   Light Shows:
     sync_mode: sync
     libraries: TV Shows
     sync_to_users: kishanp
     summary: light shows
-    variables:
-      key: light
     smart_filter:
       sort_by: random
       any:
@@ -24,6 +19,4 @@ playlists:
           - "The League"
           - "It's Always Sunny in Philadelphia"
           - "The Office (US)"
-    template:
-      - name: shared
     url_poster: https://raw.githubusercontent.com/dezerving/kometa/refs/heads/master/posters/Light%20Shows.jpg
