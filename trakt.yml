@@ -1,0 +1,18 @@
+#######################################################
+#                 Trakt Collections                   #
+#######################################################
+
+external_templates:
+  default: templates
+  template_variables:
+    collection_section: "050"
+    image: chart/<<mapping_name_encoded>>
+
+templates:
+  trakt:
+    default:
+      limit: 100
+      limit_<<key>>: <<limit>>
+    trakt_chart:
+      chart: <<key>>
+      limit: <<limit_<<key>>>>
