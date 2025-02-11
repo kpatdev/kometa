@@ -16,3 +16,54 @@ templates:
     trakt_chart:
       chart: <<key>>
       limit: <<limit_<<key>>>>
+
+collections:
+  Trakt Collected:
+    variables:
+      key: collected
+    template:
+      - name: trakt
+      - name: shared
+        translation_key: trakt_collected
+      - name: arr
+      - name: custom
+
+  Trakt Popular:
+    variables:
+      key: popular
+    template:
+      - name: trakt
+      - name: shared
+        translation_key: trakt_popular
+      - name: arr
+      - name: custom
+
+  Trakt Recommended:
+    variables:
+      key: recommended
+    template:
+      - name: trakt
+      - name: shared
+        translation_key: trakt_recommended
+      - name: arr
+      - name: custom
+
+  Trakt Trending:
+    variables:
+      key: trending
+    template:
+      - name: trakt
+      - name: shared
+        translation_key: trakt_trending
+      - name: arr
+      - name: custom
+
+  Trakt Watched:
+    variables:
+      key: watched
+    template:
+      - name: trakt
+      - name: shared
+        translation_key: trakt_watched
+      - name: arr
+      - name: custom
