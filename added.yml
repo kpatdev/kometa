@@ -12,7 +12,6 @@ collections:
   Recently Added:
     variables:
       key: added
-      # poster: "Newly%20Released.jpg"
     template:
       - name: smart_filter
         search_term: added
@@ -23,7 +22,6 @@ collections:
   Recently Aired:
     variables:
       key: episodes
-      # poster: "Newly%20Released.jpg"
     template:
       - name: smart_filter
         search_term: episode_air_date
@@ -36,22 +34,10 @@ collections:
   Recently Released:
     variables:
       key: released
-      # poster: "Newly%20Released.jpg"
     template:
       - name: smart_filter
         search_term: release
         search_value: <<in_the_last_released>>
-        in_the_last_released: 365
+        in_the_last_released: 180
       - name: shared
     url_poster: https://raw.githubusercontent.com/dezerving/kometa/refs/heads/master/posters/Recently%20Released.jpg
-
-  # Recently Added:
-  #   # url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/refs/heads/master/chart/Newly%20Released.jpg
-  #   sort_title: "!040_Just Added"
-  #   smart_filter:
-  #     sort_by: added.desc
-  #     all:
-  #       added: 365
-  #   visible_library: true
-  #   visible_home: true
-  #   visible_shared: true
