@@ -22,9 +22,8 @@ collections:
         country: India
         audio_language: hi
       - name: shared
-    summary: "Bollywood shows and movies."
+    summary: "Bollywood movies and shows."
     url_poster: https://i.imgur.com/s52KOu1.jpg
-
 # templates:
 #   Language:
 #     plex_search:

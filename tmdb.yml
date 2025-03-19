@@ -1,0 +1,70 @@
+#######################################################
+#                  TMDb Collections                   #
+#######################################################
+
+external_templates:
+  default: templates
+  template_variables:
+    collection_section: "060"
+    # image: chart/<<mapping_name_encoded>>
+
+templates:
+  tmdb:
+    default:
+      limit: 100
+      limit_<<key>>: <<limit>>
+      chart: <<key>>
+    tmdb_<<chart>>: <<limit_<<key>>>>
+
+collections:
+  TMDb Trending:
+    variables:
+      key: trending
+    template:
+      - name: tmdb
+        chart: trending_weekly
+      - name: shared
+        translation_key: tmdb_trending
+      - name: arr
+      - name: custom
+
+  Airing Today:
+    variables:
+      key: airing
+    template:
+      - name: tmdb
+        chart: airing_today
+      - name: shared
+        allowed_libraries: show
+        translation_key: tmdb_airing
+      - name: arr
+      - name: custom
+
+  # On The Air:
+  #   variables:
+  #     key: air
+  #   template:
+  #     - name: tmdb
+  #       chart: on_the_air
+  #     - name: shared
+  #       allowed_libraries: show
+  #       translation_key: tmdb_air
+  #     - name: arr
+  #     - name: custom
+
+  Netflix Top 10:
+    variables:
+      key: netflix
+    tmdb_discover:
+      with_watch_providers: 8
+      watch_region: us
+      sort_by: popularity.desc
+    limit: 10
+    template:
+      - name: shared
+      - name: tmdb
+        chart: netflix_top_10
+        limit: 100
+      - name: arr
+      - name: custom
+    # url_poster: https://raw.githubusercontent.com/dezerving/kometa/refs/heads/master/posters/Netflix%20Top%2010.jpg
