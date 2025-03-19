@@ -59,12 +59,10 @@ collections:
       with_watch_providers: 8
       watch_region: us
       sort_by: popularity.desc
+      limit: 100
     limit: 10
     template:
       - name: shared
-      - name: tmdb
-        chart: netflix_top_10
-        limit: 100
       - name: arr
       - name: custom
     # url_poster: https://raw.githubusercontent.com/dezerving/kometa/refs/heads/master/posters/Netflix%20Top%2010.jpg
