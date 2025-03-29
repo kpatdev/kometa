@@ -9,7 +9,7 @@ external_templates:
     # image: chart/<<poster>>
 
 collections:
-  In Progress:
+  Started:
     variables:
       key: progress_shows
     smart_filter:
@@ -21,13 +21,13 @@ collections:
       - name: shared
     collection_filtering: user
     url_poster: https://raw.githubusercontent.com/dezerving/kometa/refs/heads/master/posters/In%20Progress.jpg
-  Light Shows:
+  Light, Easy Shows:
     variables:
       key: light
     smart_filter:
       sort_by: random
       any:
-        title: 
+        title:
           - "Entourage"
           - "Silicon Valley"
           - "Brooklyn Nine-Nine"
