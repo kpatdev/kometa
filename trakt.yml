@@ -5,8 +5,22 @@
 external_templates:
   default: templates
   template_variables:
-    collection_section: "050"
     image: chart/<<mapping_name_encoded>>
+    collection_section: "050"
+    collection_order_popular: random
+    collection_order_recommended: random
+    collection_order_trending: random
+    visible_library_trending: true
+    visible_home_trending: true
+    visible_shared_trending: true
+    visible_library_popular: true
+    visible_home_popular: true
+    visible_shared_popular: true
+    radarr_tag_<<key>>: kometa_<<collection_name>>
+    radarr_add_missing_trending: true
+    radarr_add_missing_popular: true
+    radarr_monitor_trending: true
+    radarr_monitor_popular: true
 
 templates:
   trakt:
@@ -28,7 +42,7 @@ collections:
       - name: arr
       - name: custom
 
-  Trakt Popular:
+  Popular:
     variables:
       key: popular
     template:
@@ -38,7 +52,7 @@ collections:
       - name: arr
       - name: custom
 
-  Trakt Recommended:
+  Recommended:
     variables:
       key: recommended
     template:
@@ -48,7 +62,7 @@ collections:
       - name: arr
       - name: custom
 
-  Trakt Trending:
+  Trending:
     variables:
       key: trending
     template:

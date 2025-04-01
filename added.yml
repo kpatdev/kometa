@@ -19,7 +19,7 @@ collections:
         in_the_last_added: 90
       - name: shared
     url_poster: https://raw.githubusercontent.com/dezerving/kometa/refs/heads/master/posters/Recently%20Added.jpg
-  Recently Aired:
+  Recently Aired Episodes:
     variables:
       key: episodes
     template:

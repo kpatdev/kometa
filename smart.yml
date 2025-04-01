@@ -9,7 +9,7 @@ external_templates:
     # image: chart/<<poster>>
 
 collections:
-  Started:
+  Get Back Into:
     variables:
       key: progress_shows
     smart_filter:

@@ -17,7 +17,7 @@ templates:
     tmdb_<<chart>>: <<limit_<<key>>>>
 
 collections:
-  TMDb Trending:
+  Trending on TMDb:
     variables:
       key: trending
     template:
@@ -28,7 +28,7 @@ collections:
       - name: arr
       - name: custom
 
-  Airing Today:
+  Shows Airing Today:
     variables:
       key: airing
     template:
@@ -52,7 +52,7 @@ collections:
   #     - name: arr
   #     - name: custom
 
-  Netflix Top 10:
+  Top 10 on Netflix:
     variables:
       key: netflix
     tmdb_discover:
