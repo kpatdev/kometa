@@ -24,5 +24,5 @@ collections:
         sort_by: random
         limit: 250
       - name: shared
-    summary: "A collection of the latest Thriller movies."
+    summary: "A collection of Thriller movies."
     url_poster: https://theposterdb.com/api/assets/69226
