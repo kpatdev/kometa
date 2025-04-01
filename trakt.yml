@@ -30,9 +30,12 @@ templates:
     default:
       limit: 100
       limit_<<key>>: <<limit>>
+      years: 2024-2025
+      years_<<key>>: <<years>>
     trakt_chart:
       chart: <<key>>
       limit: <<limit_<<key>>>>
+      years: <<years_<<key>>>>
 
 collections:
   Trakt Collected:
