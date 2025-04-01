@@ -14,14 +14,14 @@ templates:
     imdb_chart: <<chart>>
 
 collections:
-  Trending India:
-    variables:
-      key: trending_india
-    template:
-      - name: IMDb
-        chart: trending_india
-      - name: shared
-      - name: arr
+  # Trending India:
+  #   variables:
+  #     key: trending_india
+  #   template:
+  #     - name: IMDb
+  #       chart: trending_india
+  #     - name: shared
+  #     - name: arr
   Top Indian:
     variables:
       key: top_indian
