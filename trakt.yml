@@ -36,6 +36,8 @@ templates:
       chart: <<key>>
       limit: <<limit_<<key>>>>
       years: <<years_<<key>>>>
+      languages: en,hi
+      countries: us,in
 
 collections:
   Trakt Collected:
