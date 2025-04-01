@@ -6,7 +6,14 @@ external_templates:
   default: templates
   template_variables:
     collection_section: "060"
-    # image: chart/<<mapping_name_encoded>>
+    collection_order_trending: random
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+    radarr_tag_<<key>>: kometa_<<collection_name>>
+    sonarr_tag_<<key>>: kometa_<<collection_name>>
+    name_trending: Trending on TMDb
+    name_airing_today: Shows Airing Today
 
 templates:
   tmdb:

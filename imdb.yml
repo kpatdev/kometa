@@ -5,9 +5,10 @@
 external_templates:
   default: templates
   template_variables:
-    collection_section: "046"
     sync_mode: sync
     collection_order: release
+    collection_section: "046"
+    radarr_tag_<<key>>: kometa_<<key>>
 
 templates:
   IMDb:

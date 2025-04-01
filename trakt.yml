@@ -21,6 +21,9 @@ external_templates:
     radarr_add_missing_popular: true
     radarr_monitor_trending: true
     radarr_monitor_popular: true
+    name_popular: Popular
+    name_recommended: Recommended
+    name_trending: Trending
 
 templates:
   trakt:
@@ -42,7 +45,7 @@ collections:
       - name: arr
       - name: custom
 
-  Popular:
+  Trakt Popular:
     variables:
       key: popular
     template:
@@ -52,7 +55,7 @@ collections:
       - name: arr
       - name: custom
 
-  Recommended:
+  Trakt Recommended:
     variables:
       key: recommended
     template:
@@ -62,7 +65,7 @@ collections:
       - name: arr
       - name: custom
 
-  Trending:
+  Trakt Trending:
     variables:
       key: trending
     template:

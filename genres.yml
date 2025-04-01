@@ -7,6 +7,10 @@ external_templates:
   template_variables:
     collection_section: "030"
     sync_mode: sync
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+    sort_title: "!030_Thriller"
 
 collections:
   Thriller:

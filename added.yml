@@ -6,7 +6,12 @@ external_templates:
   default: templates
   template_variables:
     collection_section: "010"
-    # image: chart/<<poster>>
+    sort_by_added: added.desc
+    sort_by_released: release.desc
+    sort_by_episodes: episode_release.desc
+    visible_library: true
+    visible_home: true
+    visible_shared: true
 
 collections:
   Recently Added:
