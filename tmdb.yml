@@ -36,6 +36,7 @@ collections:
         translation_key: tmdb_trending
       - name: arr
       - name: custom
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/refs/heads/master/chart/color/TMDb%20Trending.jpg
 
   Shows Airing Today:
     variables:
@@ -49,6 +50,7 @@ collections:
         translation_key: tmdb_airing
       - name: arr
       - name: custom
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/refs/heads/master/chart/color/TMDb%20Airing%20Today.jpg
 
   # On The Air:
   #   variables:
