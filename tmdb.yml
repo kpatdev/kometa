@@ -14,6 +14,7 @@ external_templates:
     sonarr_tag_<<key>>: kometa_<<collection_name>>
     name_trending: Trending on TMDb
     name_airing_today: Shows Airing Today
+    image: chart/<<style>>/<<mapping_name_encoded>>
 
 templates:
   tmdb:
@@ -26,6 +27,7 @@ templates:
 collections:
   Trending on TMDb:
     variables:
+      style: color
       key: trending
     template:
       - name: tmdb
@@ -37,6 +39,7 @@ collections:
 
   Shows Airing Today:
     variables:
+      style: color
       key: airing
     template:
       - name: tmdb
