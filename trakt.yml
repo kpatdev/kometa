@@ -21,8 +21,9 @@ external_templates:
     radarr_add_missing_popular: true
     radarr_monitor_trending: true
     radarr_monitor_popular: true
+    sonarr_tag_<<key>>: kometa_<<collection_name>>
     sonarr_add_missing_trending: true
-    sonarr_add_missing_popular: true
+    sonarr_add_missing_popular: false
     sonarr_monitor_trending: none
     sonarr_monitor_popular: none
     name_popular: Popular
