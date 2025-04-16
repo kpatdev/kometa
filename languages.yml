@@ -18,7 +18,7 @@ collections:
       key: bollywood
     template:
       - name: smart_filter
-        sort_by: random
+        sort_by: release.desc
         search_term: audio_language
         search_value: <<audio_language>>
         search_term2: country
