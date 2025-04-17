@@ -7,7 +7,7 @@ playlists:
     libraries: TV Shows
     sync_to_users: kishanp
     summary: Light shows to watch whenever.
-    url_poster: https://raw.githubusercontent.com/dezerving/kometa/refs/heads/master/posters/Light%20Shows.jpg
+    url_poster: https://raw.githubusercontent.com/kpatdev/kometa/refs/heads/master/posters/Light%20Shows.jpg
     builder_level: episode
     smart_filter:
       sort_by: random

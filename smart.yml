@@ -24,7 +24,7 @@ collections:
     template:
       - name: shared
     collection_filtering: user
-    url_poster: https://raw.githubusercontent.com/dezerving/kometa/refs/heads/master/posters/In%20Progress.jpg
+    url_poster: https://raw.githubusercontent.com/kpatdev/kometa/refs/heads/master/posters/In%20Progress.jpg
   Light and Easy:
     variables:
       key: light
@@ -40,4 +40,4 @@ collections:
           - "The Office (US)"
     template:
       - name: shared
-    url_poster: https://raw.githubusercontent.com/dezerving/kometa/refs/heads/master/posters/Light%20Shows.jpg
+    url_poster: https://raw.githubusercontent.com/kpatdev/kometa/refs/heads/master/posters/Light%20Shows.jpg
