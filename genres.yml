@@ -21,7 +21,7 @@ collections:
       - name: smart_filter
         search_term: genre
         search_value: <<genre>>
-        sort_by: random
+        sort_by: release.desc
         limit: 250
       - name: shared
     summary: "A collection of Thriller movies."
