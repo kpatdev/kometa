@@ -25,7 +25,7 @@ templates:
     tmdb_<<chart>>: <<limit_<<key>>>>
 
 collections:
-  Trending on TMDb:
+  TMDb Trending:
     variables:
       style: color
       key: trending
@@ -38,7 +38,7 @@ collections:
       - name: custom
     url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/refs/heads/master/chart/color/TMDb%20Trending.jpg
 
-  Shows Airing Today:
+  TMDb Airing Today:
     variables:
       style: color
       key: airing

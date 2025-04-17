@@ -1,0 +1,37 @@
+#######################################################
+#                Tautulli Collections                 #
+#######################################################
+
+external_templates:
+  default: templates
+  template_variables:
+    collection_section: "011"
+    image: chart/<<style>>/<<mapping_name_encoded>>
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+    name_watched: Popular on Plex
+
+templates:
+  tautulli:
+    default:
+      list_days: 30
+      list_size: 20
+      list_days_<<key>>: <<list_days>>
+      list_size_<<key>>: <<list_size>>
+    tautulli_<<type>>:
+      list_days: <<list_days_<<key>>>>
+      list_size: <<list_size_<<key>>>>
+
+collections:
+  Plex Popular:
+    variables:
+      style: color
+      key: watched
+    template:
+      - name: tautulli
+        type: watched
+      - name: shared
+        translation_key: tautulli_watched
+      - name: custom
+        cache_builders: 0
