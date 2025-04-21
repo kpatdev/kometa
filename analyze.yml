@@ -1,0 +1,8 @@
+collections:
+  Detect Intro:
+    plex_search:
+      all:
+        episode_added: 1
+    item_analyze: true
+    build_collection: false
+    builder_level: episode

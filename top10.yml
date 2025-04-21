@@ -1,0 +1,65 @@
+#######################################################
+#                 Top 10 Collections                  #
+#######################################################
+
+external_templates:
+  default: templates
+  template_variables:
+    collection_section: "020"
+
+templates:
+  flixpatrol:
+    default:
+      trakt_list_<<key>>: <<trakt_list>>
+      location: united-states
+      location_<<key>>: <<location>>
+      limit: 10
+      limit_<<key>>: <<limit>>
+    optional:
+      - trakt_list
+    conditionals:
+      actual_location:
+        default: <<location_<<key>>>>
+        conditions:
+          - key: apple-tv
+            value: world
+          - key: disney
+            value: world
+    limit: <<limit>>
+    trakt_list: <<trakt_list_<<key>>>>
+    ignore_blank_results: true
+    sync_mode: sync
+    collection_order: custom
+
+dynamic_collections:
+  FlixPatrol:
+    type: custom
+    data:
+      netflix: Netflix
+      disney: Disney+
+      hbo: Max
+      hulu: Hulu
+      paramount-plus: Paramount+
+      amazon-prime: Prime Video
+      apple-tv: Apple TV+
+    template:
+      - flixpatrol
+      - shared
+      - arr
+    template_variables:
+      trakt_list:
+        netflix: https://trakt.tv/users/johnfawkes/lists/netflix-<<actual_location>>-top10-without-fallback
+        disney: https://trakt.tv/users/johnfawkes/lists/disney-<<actual_location>>-top10-without-fallback
+        hbo: https://trakt.tv/users/johnfawkes/lists/hbo-<<actual_location>>-top10-without-fallback
+        hulu: https://trakt.tv/users/johnfawkes/lists/hulu-<<actual_location>>-top10-without-fallback
+        paramount-plus: https://trakt.tv/users/johnfawkes/lists/paramount-plus-<<actual_location>>-top10-without-fallback
+        amazon-prime: https://trakt.tv/users/johnfawkes/lists/amazon-prime-<<actual_location>>-top10-without-fallback
+        apple-tv: https://trakt.tv/users/johnfawkes/lists/apple-tv-<<actual_location>>-top10-without-fallback
+      limit:
+        default: 10
+      translation_key:
+        default: flixpatrol
+      dynamic:
+        default: true
+      url_poster:
+        default: https://git.servernation.xyz/anonfawkes/Kometa-Stuff/raw/branch/main/kometa/data/config/configs/posters/<<key>>_top.jpg

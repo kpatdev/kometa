@@ -64,17 +64,17 @@ collections:
   #     - name: arr
   #     - name: custom
 
-  Top 10 on Netflix:
-    variables:
-      key: netflix
-    tmdb_discover:
-      with_watch_providers: 8
-      watch_region: us
-      sort_by: popularity.desc
-      limit: 100
-    limit: 10
-    template:
-      - name: shared
-      - name: arr
-      - name: custom
-    # url_poster: https://raw.githubusercontent.com/kpatdev/kometa/refs/heads/master/posters/Netflix%20Top%2010.jpg
+  # Top 10 on Netflix:
+  #   variables:
+  #     key: netflix
+  #   tmdb_discover:
+  #     with_watch_providers: 8
+  #     watch_region: us
+  #     sort_by: popularity.desc
+  #     limit: 100
+  #   limit: 10
+  #   template:
+  #     - name: shared
+  #     - name: arr
+  #     - name: custom
+  # url_poster: https://raw.githubusercontent.com/kpatdev/kometa/refs/heads/master/posters/Netflix%20Top%2010.jpg

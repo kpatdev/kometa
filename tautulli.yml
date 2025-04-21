@@ -5,12 +5,12 @@
 external_templates:
   default: templates
   template_variables:
-    collection_section: "011"
+    collection_section: "012"
     image: chart/<<style>>/<<mapping_name_encoded>>
     visible_library: true
     visible_home: true
     visible_shared: true
-    name_watched: Popular on Plex
+    name_popular: Popular on Plex
 
 templates:
   tautulli:
@@ -27,11 +27,11 @@ collections:
   Plex Popular:
     variables:
       style: color
-      key: watched
+      key: popular
     template:
       - name: tautulli
-        type: watched
+        type: popular
       - name: shared
-        translation_key: tautulli_watched
+        translation_key: tautulli_popular
       - name: custom
         cache_builders: 0
