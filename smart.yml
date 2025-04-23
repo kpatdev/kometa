@@ -6,9 +6,9 @@ external_templates:
   default: templates
   template_variables:
     collection_section: "009"
-    visible_library: true
-    visible_home: true
-    visible_shared: true
+    visible_library: false
+    visible_home: false
+    visible_shared: false
     visible_shared_light: false
     visible_library_light: false
 
