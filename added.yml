@@ -32,6 +32,7 @@ collections:
         search_term: episode_air_date
         search_value: <<in_the_last_episodes>>
         in_the_last_episodes: 90
+        limit: 100
         type: episodes
       - name: shared
     builder_level: episode
