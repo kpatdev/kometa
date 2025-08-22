@@ -5,7 +5,7 @@ overlays:
       added: 14
     overlay:
       name: Recently Added
-      file: config/kometa/overlays/recently_added.png
+      repo: overlays/recently_added
       horizontal_align: left
       vertical_align: bottom
       horizontal_offset: 0
