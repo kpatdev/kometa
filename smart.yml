@@ -25,6 +25,18 @@ collections:
       - name: shared
     collection_filtering: user
     url_poster: https://raw.githubusercontent.com/kpatdev/kometa/refs/heads/master/posters/In%20Progress.jpg
+  Rewatch:
+    variables:
+      key: rewatch
+    smart_filter:
+      sort_by: viewed.desc
+      all:
+        unplayed_episodes: false
+        episode_plays.gt: 0
+    template:
+      - name: shared
+    collection_filtering: user
+    # url_poster: https://raw.githubusercontent.com/kpatdev/kometa/refs/heads/master/posters/In%20Progress.jpg
   Light and Easy:
     variables:
       key: light
