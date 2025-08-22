@@ -50,6 +50,7 @@ collections:
           - "The League"
           - "It's Always Sunny in Philadelphia"
           - "The Office (US)"
+          - "The Big Bang Theory"
     template:
       - name: shared
     url_poster: https://raw.githubusercontent.com/kpatdev/kometa/refs/heads/master/posters/Light%20Shows.jpg
