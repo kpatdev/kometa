@@ -6,7 +6,7 @@ overlays:
     overlay:
       name: Recently Added
       repo: overlays/recently_added
-      horizontal_align: left
+      horizontal_align: center
       vertical_align: bottom
       horizontal_offset: 0
       vertical_offset: 0
