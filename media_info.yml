@@ -305,7 +305,7 @@ templates:
     plex_all: true
     overlay:
       name: <<overlay_name>>
-      file: <<file>>
+      repo: <<repo>>
 
 overlays:
   gradient_top:
