@@ -10,3 +10,4 @@ overlays:
       vertical_align: bottom
       horizontal_offset: 0
       vertical_offset: 0
+      scale_height: 75%
