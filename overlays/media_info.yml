@@ -39,11 +39,11 @@ external_templates:
       repo:
         conditions:
           - type: [combined, video, audio]
-            value: overlays/media_info/images/codec/<<key>>
+            value: overlays/images/media_info/images/codec/<<key>>
           - type: resolution
-            value: overlays/media_info/images/resolution/<<key>>
+            value: overlays/images/media_info/images/resolution/<<key>>
           - type: edition
-            value: overlays/media_info/images/edition/<<key>>
+            value: overlays/images/media_info/images/edition/<<key>>
       final_use:
         conditions:
           - video_only.exists: true
@@ -288,14 +288,14 @@ templates:
         conditions:
           - key: gradient_top
             builder_level: episode
-            value: overlays/media_info/gradients/gradient_episode_top
+            value: overlays/images/media_info/gradients/gradient_episode_top
           - key: gradient_top
-            value: overlays/media_info/gradients/gradient_top
+            value: overlays/images/media_info/gradients/gradient_top
           - key: gradient_bottom
             builder_level: episode
-            value: overlays/media_info/gradients/gradient_episode_bottom
+            value: overlays/images/media_info/gradients/gradient_episode_bottom
           - key: gradient_bottom
-            value: overlays/media_info/gradients/gradient_bottom
+            value: overlays/images/media_info/gradients/gradient_bottom
     optional:
       - builder_level
       - use_<<key>>

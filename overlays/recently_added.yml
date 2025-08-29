@@ -5,7 +5,7 @@ overlays:
       added: 14
     overlay:
       name: Recently Added
-      repo: overlays/recently_added
+      repo: overlays/images/recently_added
       horizontal_align: center
       vertical_align: bottom
       horizontal_offset: 0
